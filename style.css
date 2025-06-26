@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px; /* Account for the fixed navbar */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar.bg-transparent {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+.profile-container {
+    width: 100%;
+    margin-top: 0;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+.header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.header p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.about-me {
+    flex: 1;
+    margin-right: 100px;
+}
+
+.about-me h2 {
+    font-size: 1.5rem;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.about-me p {
+    font-size: 1.125rem;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+.profile-pic{
+   width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #3671e7;
+    text-decoration: none; 
+}
+
+.project-section {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-section h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.live-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.code-btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.live-btn:hover {
+    background-color: #444;
+}
+
+.code-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.skills-section {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.skills-section p {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 40px;
+    transition: color 0.3s ease;
+}
+
+.skills-category {
+    margin-bottom: 40px;
+}
+
+.skills-category h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    width: 100px;
+    text-align: center;
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #000;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-section p {
+    font-size: 1.125rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    transition: color 0.3s ease;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #444;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #666;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right a {
+    margin-left: 15px;
+    color: #666;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #000;
+}
+
+
+
+.form-body{
+    box-sizing: border-box;
+	padding: 100;
+	margin: 0;
+	font-family: 'poppins', sans-serif;
+	font-size: 18px;
+}
+
+input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+textarea{
+	width: 100%;
+	padding: 10px;
+}
+#submit{
+	border: none;
+	background-color: orangered;
+	color: white;
+	width: 200px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+#submit:hover{
+	background-color: #333333;
+}
+
+.form-container{
+    width: 500px;
+	padding: 30px;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	background-color: #003b5b;
+
+}
+
+.form-container h4{
+   margin-bottom: 10px;
+	font-size: 24px;
+	color: white;
+ 
+}
+
+#body-of-form{
+    height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
